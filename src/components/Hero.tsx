@@ -6,13 +6,13 @@ export function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-          Hello Visitors, I'm <span className="text-indigo-400 relative">
+          Hi, I'm <span className="text-indigo-400 relative">
             Binay Dalai
             <span className="absolute -inset-1 bg-indigo-500/20 blur-lg -z-10"></span>
           </span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-          Currently Computer Science and Mathematics Undergrad at Pennsylvania State University, and I am passionate about Quantum Computing and Machine Learning
+          Computer Science and Mathematics Undergrad at Pennsylvania State University. I am passionate about Quantum Computing and Machine Learning
         </p>
         <div className="flex justify-center space-x-4">
           <a
