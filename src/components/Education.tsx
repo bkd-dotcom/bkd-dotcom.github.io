@@ -12,7 +12,7 @@ interface EducationItem {
 
 const educationData: EducationItem[] = [
   {
-    degree: "B.Tech in Computer Science and Mathematics",
+    degree: "Bachelor of Science in Computer Science and Mathematics",
     school: "Pennsylvania State University",
     location: "University Park, PA, USA",
     period: "August 2023- Present",
