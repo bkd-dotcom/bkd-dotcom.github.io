@@ -12,17 +12,59 @@ interface ExperienceItem {
 
 const experienceData: ExperienceItem[] = [
   {
-    title: "Software Development Engineer Intern",
-    company: "Celebal Technologies",
-    location: "Remote",
-    period: "Feb 2023 - Aug 2023",
+    title: "Machine Learning Engineer",
+    company: "Nittany AI Advance, Pennsylvania State University",
+    location: "University Park, PA",
+    period: "December 2024 - Present",
     description: [
-      "Developed and maintained web applications using React.js and TypeScript",
-      "Implemented responsive designs and modern UI components",
-      "Collaborated with senior developers on large-scale projects",
-      "Participated in code reviews and agile development processes"
+      "Working on 'Learned Virus Mitigation Project' sponsored by Lockheed Martin",
+      "Developing machine learning models including reinforcement learning and physics-informed neural networks",
+      "Predicting virus spread, optimizing containment strategies, and scheduling care actions in dynamic scenarios",
+      "Developing AI/ML solutions to find, track, and stop virus spread in containment scenarios",
+      "Solutions applicable to defense applications across aerospace, autonomy, missile defense, and advanced engineering"
     ],
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Git"]
+    technologies: ["Machine Learning", "Reinforcement Learning", "Neural Networks", "AI"]
+  },
+  {
+    title: "Math-Tutor and Grader",
+    company: "Pennsylvania State University",
+    location: "University Park, PA",
+    period: "August 2024 - Present",
+    description: [
+      "Tutoring and mentoring students in College Level Calculus I and II",
+      "Supporting approximately 500 students in 0-100 Level Math courses",
+      "Providing personalized academic support and addressing individual learning needs",
+      "Improving students' problem-solving abilities and course performance",
+      "Conducting group study sessions"
+    ],
+    technologies: ["Calculus", "Algebra", "Geometry", "Mathematics"]
+  },
+  {
+    title: "Student Researcher",
+    company: "Nirma University",
+    location: "Ahmedabad",
+    period: "May 2024 - August 2024",
+    description: [
+      "Led research on 'Quantum-Based Transformer Model'",
+      "Improved AI Transformer Model efficiency by 43%",
+      "Reduced data processing time by 30%",
+      "Implemented Quantum approximate optimization algorithm",
+      "Developed and optimized quantum-enhanced vision transformer models"
+    ],
+    technologies: ["Python", "TensorFlow", "Qiskit", "PyTorch", "Quantum Computing"]
+  },
+  {
+    title: "Research Intern",
+    company: "Indian Institute of Technology",
+    location: "Gandhinagar",
+    period: "May 2024 - June 2024",
+    description: [
+      "Worked on 'Generative AI meets Quantum Software Engineering' with focus on Green Computing",
+      "Achieved 57% increase in accuracy for Green Computing decisions",
+      "Collaborated with team to design and implement Machine Learning solutions",
+      "Developed innovative approaches combining quantum computing and AI"
+    ],
+    technologies: ["Qiskit", "NumPy", "JavaScript", "SQL", "Python", "C"]
   }
 ];
 
