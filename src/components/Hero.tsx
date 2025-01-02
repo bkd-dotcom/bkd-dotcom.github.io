@@ -12,7 +12,7 @@ export function Hero() {
           </span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-          Computer Science and Mathematics Undergrad at Pennsylvania State University.I am passionate about Quantum Computing and Machine Learning
+          Computer Science and Mathematics Undergrad at Pennsylvania State University. I am passionate about Quantum Computing and Machine Learning
         </p>
         <div className="flex justify-center space-x-4">
           <a
