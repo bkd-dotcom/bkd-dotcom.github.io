@@ -1,15 +1,13 @@
 import React from 'react';
 
 const skills = [
-  { name: 'Python', level: 95 },
-  { name: 'C++', level: 90 },
+  { name: 'Python', level: 89 },
+  { name: 'C++', level: 80 },
   { name: 'JavaScript', level: 85 },
   { name: 'TensorFlow/Keras', level: 90 },
-  { name: 'IBM Quantum', level: 85 },
   { name: 'SQL/MySQL', level: 90 },
   { name: 'Django', level: 85 },
   { name: 'Docker', level: 80 },
-  { name: 'Git', level: 90 },
 ];
 
 export function Skills() {
