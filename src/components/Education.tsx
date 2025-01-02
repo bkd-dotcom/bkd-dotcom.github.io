@@ -15,9 +15,16 @@ const educationData: EducationItem[] = [
     degree: "Bachelor of Science in Computer Science and Mathematics",
     school: "Pennsylvania State University",
     location: "University Park, PA, USA",
-    period: "August 2023- Present",
-    description: `GPA: 3.91/4.0<br />Dean’s List: Fall 2023, Spring 2024, Summer 2024, Fall 2024<br />Courses Completed: Python Programming, Java Programming, C and Systems Programming, Discrete Mathematics`
+    period: "August 2023 - Present (Expected Graduation Date - May 2026)",
+    description: `GPA: 3.91/4.0<br />Dean’s List: Fall 2023, Spring 2024, Summer 2024, Fall 2024<br />Courses Completed: Python Programming, Java Programming, C and Systems Programming, Discrete Mathematics<br /> Clubs Involved: Nittany AI Alliance, ACM ML Club, and Google Student Developer's Club`
   }
+  {
+    degree: "Bachelor of Technology in Computational and Data Science",
+    school: "National Institute of Technology, Karnataka",
+    location: "Mangalore, Karnataka, India" ,
+    period: "November 2022- July 2023",
+    description : "Executive Member of the ACM(Association of Computing Machinery) NITK club",
+      } 
 ];
 
 export function Education() {
