@@ -11,11 +11,11 @@ interface EducationItem {
 
 const educationData: EducationItem[] = [
   {
-    degree: "B.Tech in Computer Science and Engineering",
-    school: "Siksha 'O' Anusandhan University",
-    location: "Bhubaneswar, India",
-    period: "2019 - 2023",
-    description: "CGPA: 9.01/10. Specialized in full-stack development and cloud computing. Active member of the coding club."
+    degree: "B.Tech in Computer Science and Mathematics",
+    school: "Pennsylvania State University",
+    location: "University Park, PA, USA",
+    period: "August 2023- Present",
+    description: "GPA: 3.91/4.0 . Dean’s List: Fall 2023, Spring 2024, Summer 2024, Fall 2024. Courses Completed: Python Programming, Java Programming, C and Systems Programming, Discrete Mathematics "
   }
 ];
 
