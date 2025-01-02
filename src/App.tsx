@@ -18,6 +18,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Education />
         <Contact />
       </main>
       <footer className="bg-black/20 py-8">
