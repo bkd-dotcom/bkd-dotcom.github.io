@@ -7,7 +7,7 @@ export function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
           Hi, I'm <span className="text-indigo-400 relative">
-            Binay Dalai
+            Binay
             <span className="absolute -inset-1 bg-indigo-500/20 blur-lg -z-10"></span>
           </span>
         </h1>
