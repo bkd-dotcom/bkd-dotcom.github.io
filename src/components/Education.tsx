@@ -22,7 +22,7 @@ const educationData: EducationItem[] = [
 
 export function Education({ visible }: { visible?: boolean }) {
   return (
-    <section className="py-20 bg-slate-50" id="education">
+    <section className="py-20 bg-transparent" id="education">
       <div className="container px-4 mx-auto max-w-5xl">
         <div className="flex items-center gap-3 mb-12">
           <GraduationCap className={`w-8 h-8 text-blue-600${visible ? ' animate-reveal-bounce' : ''}`} />
@@ -32,7 +32,7 @@ export function Education({ visible }: { visible?: boolean }) {
           {educationData.map((item, index) => (
             <div 
               key={index}
-              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300"
+              className="p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white/5 backdrop-blur-sm"
             >
               <h3 className="text-xl font-bold text-gray-900">{item.degree}</h3>
               <div className="mt-3 flex flex-col sm:flex-row sm:items-center sm:justify-between text-gray-600">
