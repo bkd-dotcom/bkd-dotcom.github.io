@@ -12,10 +12,22 @@ interface ExperienceItem {
 
 const experienceData: ExperienceItem[] = [
   {
-    title: "Machine Learning Engineer",
+    title: "IBM AI Engineer Co-op Intern",
+    company: "Midwest Client Engineering Team",
+    location: "State College, PA",
+    period: "May 2025 – Present",
+    description: [
+      "Collaborating with the Midwest Client Engineering Team to design and deploy AI-powered solutions for enterprise clients (NLP, generative AI, ML)",
+      "Building and optimizing scalable AI models using IBM Watson, Red Hat OpenShift, and foundational models",
+      "Deploying real-time client applications in cloud-native environments"
+    ],
+    technologies: ["IBM Watson", "Red Hat OpenShift", "NLP", "Generative AI", "Machine Learning", "Cloud-Native"]
+  },
+  {
+    title: "Machine Learning Engineer Intern",
     company: "Nittany AI Advance, Pennsylvania State University",
     location: "University Park, PA",
-    period: "December 2024 - Present",
+    period: "December 2024 - April 2025 ",
     description: [
       "Working on 'Learned Virus Mitigation Project' sponsored by Lockheed Martin",
       "Developing machine learning models including reinforcement learning and physics-informed neural networks",
@@ -26,10 +38,10 @@ const experienceData: ExperienceItem[] = [
     technologies: ["Machine Learning", "Reinforcement Learning", "Neural Networks", "AI"]
   },
   {
-    title: "Math-Tutor and Grader",
+    title: "Math-Tutor and  Computer Science 360 Grader",
     company: "Pennsylvania State University",
     location: "University Park, PA",
-    period: "August 2024 - Present",
+    period: "August 2024 - May 2025",
     description: [
       "Tutoring and mentoring students in College Level Calculus I and II",
       "Supporting approximately 500 students in 0-100 Level Math courses",

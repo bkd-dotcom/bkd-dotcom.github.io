@@ -9,7 +9,6 @@ export function Header() {
           <a href="#home" className="text-xl font-bold text-white">Binay Dalai</a>
           <nav className="hidden md:flex space-x-8">
             <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
-            <a href="#skills" className="text-gray-300 hover:text-white transition-colors">Skills</a>
             <a href="#experience" className="text-gray-300 hover:text-white transition-colors">Experiences</a>
             <a href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</a>
             <a href="#education" className="text-gray-300 hover:text-white transition-colors">Education</a>
