@@ -26,7 +26,7 @@ export function Education({ visible }: { visible?: boolean }) {
       <div className="container px-4 mx-auto max-w-5xl">
         <div className="flex items-center gap-3 mb-12">
           <GraduationCap className={`w-8 h-8 text-blue-600${visible ? ' animate-reveal-bounce' : ''}`} />
-          <h2 className="text-3xl font-bold text-gray-900">Education</h2>
+          <h2 className="text-3xl font-bold text-white">Education</h2>
         </div>
         <div className="space-y-8">
           {educationData.map((item, index) => (
@@ -34,18 +34,18 @@ export function Education({ visible }: { visible?: boolean }) {
               key={index}
               className="p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white/5 backdrop-blur-sm"
             >
-              <h3 className="text-xl font-bold text-gray-900">{item.degree}</h3>
-              <div className="mt-3 flex flex-col sm:flex-row sm:items-center sm:justify-between text-gray-600">
+              <h3 className="text-xl font-bold text-white">{item.degree}</h3>
+              <div className="mt-3 flex flex-col sm:flex-row sm:items-center sm:justify-between text-blue-200">
                 <div>
-                  <p className="font-semibold text-blue-600">{item.school}</p>
+                  <p className="font-semibold text-blue-400">{item.school}</p>
                   {item.location && (
-                    <p className="text-sm mt-1">{item.location}</p>
+                    <p className="text-sm mt-1 text-blue-200">{item.location}</p>
                   )}
                 </div>
-                <p className="mt-2 sm:mt-0 text-sm font-medium">{item.period}</p>
+                <p className="mt-2 sm:mt-0 text-sm font-medium text-blue-200">{item.period}</p>
               </div>
               <p
-                className="mt-4 text-gray-700 leading-relaxed"
+                className="mt-4 text-blue-100 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: item.description }}
               ></p>
             </div>

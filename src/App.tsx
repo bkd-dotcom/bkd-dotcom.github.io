@@ -53,7 +53,7 @@ export default function App() {
         <FadeInSection>{(visible) => <Projects visible={visible} />}</FadeInSection>
         <FadeInSection>{(visible) => <Contact visible={visible} />}</FadeInSection>
       </main>
-      <footer className="mt-12 py-6 text-center text-gray-400 text-sm">
+      <footer className="mt-12 py-6 text-center text-blue-200 text-sm drop-shadow-lg">
         &copy; {new Date().getFullYear()} Binay. All rights reserved.
       </footer>
     </div>
