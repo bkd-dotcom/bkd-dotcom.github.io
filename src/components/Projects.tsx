@@ -18,11 +18,14 @@ const projects = [
   }
 ];
 
-export function Projects() {
+export function Projects({ visible }: { visible?: boolean }) {
   return (
     <section id="projects" className="py-20 bg-black/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Projects</h2>
+        <div className="flex items-center justify-center gap-3 mb-12">
+          <ExternalLink className={`w-8 h-8 text-indigo-400${visible ? ' animate-project-spin' : ''}`} />
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white">Projects</h2>
+        </div>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div key={project.title} className="bg-white/5 rounded-lg overflow-hidden backdrop-blur-sm">

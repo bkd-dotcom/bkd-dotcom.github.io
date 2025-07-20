@@ -1,12 +1,46 @@
-import React from 'react';
+import { useCallback } from 'react';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
 
-export function Background() {
+export function BackgroundParticles() {
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
   return (
-    <div className="fixed inset-0 -z-10">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-indigo-900 to-purple-900 animate-gradient-slow">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImEiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHBhdGggZD0iTSAwIDAgTCAyMCAwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2Utb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2EpIi8+PC9zdmc+')] opacity-20"></div>
-      </div>
-      <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/30"></div>
-    </div>
+    <Particles
+      id="tsparticles"
+      className="pointer-events-none"
+      init={particlesInit}
+      options={{
+        fullScreen: { enable: true, zIndex: 0 },
+        particles: {
+          number: { value: 60, density: { enable: true, area: 800 } },
+          color: { value: '#60a5fa' }, // Tailwind blue-400
+          shape: { type: 'circle' },
+          opacity: { value: 0.3, random: true },
+          size: { value: 4, random: { enable: true, minimumValue: 2 } },
+          move: {
+            enable: true,
+            speed: 2.5, // medium movement
+            direction: 'none',
+            random: false,
+            straight: false,
+            outModes: { default: 'out' },
+          },
+          links: {
+            enable: false,
+          },
+        },
+        interactivity: {
+          events: {
+            onHover: { enable: false },
+            onClick: { enable: false },
+            resize: true,
+          },
+        },
+        detectRetina: true,
+      }}
+    />
   );
 }

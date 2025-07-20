@@ -80,12 +80,12 @@ const experienceData: ExperienceItem[] = [
   }
 ];
 
-export function Experience() {
+export function Experience({ visible }: { visible?: boolean }) {
   return (
     <section className="py-20 bg-gray-900" id="experience">
       <div className="container px-4 mx-auto max-w-5xl">
         <div className="flex items-center gap-3 mb-12">
-          <Briefcase className="w-8 h-8 text-blue-400" />
+          <Briefcase className={`w-8 h-8 text-blue-400${visible ? ' animate-reveal-bounce' : ''}`} />
           <h2 className="text-3xl font-bold text-white">Experience</h2>
         </div>
         <div className="space-y-8">

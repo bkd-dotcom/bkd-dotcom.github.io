@@ -1,11 +1,14 @@
 import React from 'react';
 import { Mail, MapPin, Github, Linkedin } from 'lucide-react';
 
-export function Contact() {
+export function Contact({ visible }: { visible?: boolean }) {
   return (
     <section id="contact" className="py-20 bg-black/20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Get in Touch</h2>
+        <div className="flex items-center justify-center gap-3 mb-12">
+          <Mail className={`w-8 h-8 text-indigo-400${visible ? ' animate-about-fadeup' : ''}`} />
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-0 text-white">Get in Touch</h2>
+        </div>
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <div className="mb-8">

@@ -16,16 +16,16 @@ const educationData: EducationItem[] = [
     school: "Pennsylvania State University",
     location: "University Park, PA, USA",
     period: "August 2023 - Present (Expected Graduation Date - May 2026)",
-    description: `GPA: 3.91/4.0<br />Dean’s List: Fall 2023, Spring 2024, Summer 2024, Fall 2024<br />Courses Completed: Python Programming, Java Programming, C and Systems Programming, Discrete Mathematics<br /> Clubs Involved: Nittany AI Alliance, ACM ML Club, and Google Student Developer's Club`
+    description: `GPA: 3.91/4.0<br />Dean’s List: Fall 2023, Spring 2024, Summer 2024, Fall 2024, Spring 2025 <br />Courses Completed: Python Programming, Java Programming, C and Systems Programming, Discrete Mathematics<br /> Clubs Involved: Nittany AI Alliance, ACM ML Club, and Google Student Developer's Club`
   }
 ];
 
-export function Education() {
+export function Education({ visible }: { visible?: boolean }) {
   return (
     <section className="py-20 bg-slate-50" id="education">
       <div className="container px-4 mx-auto max-w-5xl">
         <div className="flex items-center gap-3 mb-12">
-          <GraduationCap className="w-8 h-8 text-blue-600" />
+          <GraduationCap className={`w-8 h-8 text-blue-600${visible ? ' animate-reveal-bounce' : ''}`} />
           <h2 className="text-3xl font-bold text-gray-900">Education</h2>
         </div>
         <div className="space-y-8">
