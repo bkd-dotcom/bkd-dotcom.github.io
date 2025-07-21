@@ -46,7 +46,7 @@ export function Education({ visible }: { visible?: boolean }) {
                   </div>
                 </div>
                 <div className="flex justify-end sm:ml-6 mt-6 sm:mt-0">
-                  <img src="/assets/psu.png" alt="Penn State University logo" className="h-18 sm:h-20 object-contain" style={{ height: '72px' }} />
+                  <img src="/assets/shc.png" alt="Schreyer Honors College logo" className="h-18 sm:h-20 object-contain" style={{ height: '72px' }} />
                 </div>
               </div>
               <p
