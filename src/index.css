@@ -126,6 +126,45 @@
     background-clip: text;
     text-fill-color: transparent;
   }
+  .animate-roll-in-x {
+    animation: roll-in-x 0.9s cubic-bezier(0.68,-0.55,0.27,1.55);
+  }
+  @keyframes roll-in-x {
+    0% {
+      opacity: 0;
+      transform: translateX(-120px) scale(0.8);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(16px) scale(1.08);
+    }
+    80% {
+      transform: translateX(-4px) scale(0.96);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+  .experience-marquee {
+    animation: experience-marquee-scroll 20s cubic-bezier(0.45,0,0.55,1) infinite;
+    transition: animation-play-state 0.5s cubic-bezier(0.4,0,0.2,1);
+  }
+  @keyframes experience-marquee-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 .aurora-bg {
   position: fixed;
