@@ -54,3 +54,7 @@ To get started with the project, follow these steps:
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+Site republished on: {{DATE}}
